@@ -2,32 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  font-family:Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.bg-main-brown {
+  background-color: rgb(118, 72, 36);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.border-main-brown {
+  border-color: rgb(118, 72, 36);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.text-main-brown {
+  color: rgb(118, 72, 36);
+}
+.bg-light-brown {
+  background-color: rgb(251, 236, 207);
+}
+
+.border-light-brown {
+  border-color: rgb(251, 236, 207);
+}
+
+.text-light-brown {
+  color: rgb(251, 236, 207);
+}
+
+.bg-light2-brown {
+  background-color: rgb(253, 246, 231);
+}
+
+.transform:hover {
+    transition: all 0.3s;
+  transform: scale(0.95);
 }
