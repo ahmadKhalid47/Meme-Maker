@@ -1,5 +1,6 @@
 import Nav from "./Components/Nav";
 // import { FaCheck, FaTimes, FaUser } from "react-icons/fa";
+import mainCat from "@/public/mainCat.png";
 
 export default function Home() {
   return (
@@ -7,7 +8,9 @@ export default function Home() {
       <Nav />
       <div className="flex justify-between items-start bg-green-30 w-full h-full pt-5">
         <div className="flex flex-col justify-start items-start bg-yellow-30 w-[43%] h-full gap-y-6">
-          <div className="flex justify-between items-start bg-light-brown w-[430px] h-[430px] rounded-2xl border-[8px] border-main-brown"></div>
+          <div className="flex justify-between items-start bg-light-brown w-[430px] h-[430px] rounded-2xl border-[8px] border-main-brown">
+            <img src={ mainCat.src}  className="w-full h-full" alt=""/>
+          </div>
           <h2 className="flex justify-center items-start bg-light2-brown w-[430px] uppercase py-3 rounded-full border-4 border-main-brown text-[20px] font-[900] transform text-main-brown">
             {/* <FaTimes/> */}
             reset michi
