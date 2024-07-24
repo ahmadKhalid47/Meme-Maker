@@ -62,11 +62,11 @@ export default function Home() {
     setHat(null);
     setFace(null);
     setHand(null);
-    setCat(null);
+    setCat(cat1);
     setback(null);
     setpant(null);
     setoutfit(null);
-    setbg(null);
+    setbg(bg1);
   }
   const handleDownload = async () => {
     const element = divRef.current;
