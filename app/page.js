@@ -172,8 +172,8 @@ export default function Home() {
                     {catArray.map((item, key) => (
                       <div
                         key={key}
-                        className={`rounded-xl w-[90px] border-4 border-main-brown h-[90px] flex flex-col justify-start items-start ${
-                          cat === item ? "bg-white" : ""
+                        className={`rounded-xl w-[90px] border-main-brown h-[90px] flex flex-col justify-start items-start ${
+                          cat === item ? "bg-white border-4" : "border-2"
                         }`}
                         onClick={() => setCat(item)}
                       >
@@ -198,8 +198,8 @@ export default function Home() {
                     {harArray.map((item, key) => (
                       <div
                         key={key}
-                        className={`rounded-xl w-[90px] border-4 border-main-brown h-[90px] flex flex-col justify-start items-start ${
-                          hat === item ? "bg-white" : ""
+                        className={`rounded-xl w-[90px] border-main-brown h-[90px] flex flex-col justify-start items-start ${
+                          hat === item ? "bg-white border-4" : "border-2"
                         }`}
                         onClick={() => setHat(item)}
                       >
@@ -224,8 +224,8 @@ export default function Home() {
                     {faceArray.map((item, key) => (
                       <div
                         key={key}
-                        className={`rounded-xl w-[90px] border-4 border-main-brown h-[90px] flex flex-col justify-start items-start ${
-                          face === item ? "bg-white" : ""
+                        className={`rounded-xl w-[90px] border-main-brown h-[90px] flex flex-col justify-start items-start ${
+                          face === item ? "bg-white border-4" : "border-2"
                         }`}
                         onClick={() => setFace(item)}
                       >
@@ -250,8 +250,8 @@ export default function Home() {
                     {handArray.map((item, key) => (
                       <div
                         key={key}
-                        className={`rounded-xl w-[90px] border-4 border-main-brown h-[90px] flex flex-col justify-start items-start ${
-                          hand === item ? "bg-white" : ""
+                        className={`rounded-xl w-[90px] border-main-brown h-[90px] flex flex-col justify-start items-start ${
+                          hand === item ? "bg-white border-4" : "border-2"
                         }`}
                         onClick={() => setHand(item)}
                       >
@@ -276,8 +276,8 @@ export default function Home() {
                     {backArray.map((item, key) => (
                       <div
                         key={key}
-                        className={`rounded-xl w-[90px] border-4 border-main-brown h-[90px] flex flex-col justify-start items-start ${
-                          back === item ? "bg-white" : ""
+                        className={`rounded-xl w-[90px] border-main-brown h-[90px] flex flex-col justify-start items-start ${
+                          back === item ? "bg-white border-4" : "border-2"
                         }`}
                         onClick={() => setback(item)}
                       >
@@ -302,8 +302,8 @@ export default function Home() {
                     {pantArray.map((item, key) => (
                       <div
                         key={key}
-                        className={`rounded-xl w-[90px] border-4 border-main-brown h-[90px] flex flex-col justify-start items-start ${
-                          pant === item ? "bg-white" : ""
+                        className={`rounded-xl w-[90px] border-main-brown h-[90px] flex flex-col justify-start items-start ${
+                          pant === item ? "bg-white border-4" : "border-2"
                         }`}
                         onClick={() => setpant(item)}
                       >
@@ -328,8 +328,8 @@ export default function Home() {
                     {outfitArray.map((item, key) => (
                       <div
                         key={key}
-                        className={`rounded-xl w-[90px] border-4 border-main-brown h-[90px] flex flex-col justify-start items-start ${
-                          outfit === item ? "bg-white" : ""
+                        className={`rounded-xl w-[90px] border-main-brown h-[90px] flex flex-col justify-start items-start ${
+                          outfit === item ? "bg-white border-4" : "border-2"
                         }`}
                         onClick={() => setoutfit(item)}
                       >
@@ -354,8 +354,8 @@ export default function Home() {
                     {bgArray.map((item, key) => (
                       <div
                         key={key}
-                        className={`rounded-xl w-[90px] border-4 border-main-brown h-[90px] flex flex-col justify-start items-start overflow-hidden ${
-                          bg === item ? "bg-white" : ""
+                        className={`rounded-xl w-[90px] border-main-brown h-[90px] flex flex-col justify-start items-start overflow-hidden ${
+                          bg === item ? "bg-white border-4" : "border-2"
                         }`}
                         onClick={() => setbg(item)}
                       >
