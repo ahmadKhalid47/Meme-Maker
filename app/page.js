@@ -89,9 +89,9 @@ export default function Home() {
   };
 
   return (
-    <div className="px-[3%] xl:px-[6%] 2xl:px-[12%] w-full h-fit pb-10 bg-light-brown">
+    <div className="px-[3%] xl:px-[6%] custom3:px-[12%] w-full h-fit pb-10 bg-light-brown">
       <Nav />
-      <div className="flex flex-col custom:flex-row justify-between items-start bg-green-30 w-full h-full pt-5 bg-green-40 zooming">
+      <div className="flex flex-col custom:flex-row justify-between items-start bg-green-30 w-full h-full pt-5 bg-green-40 zooming2">
         <div className="flex flex-col justify-start items-center custom:items-start bg-yellow-30 w-[100%] custom:w-[43%] h-full gap-y-6 bg-red-30">
           <div className="relative flex justify-between items-start bg-light-brown w-[430px] h-[430px] rounded-2xl border-[8px] border-main-brown overflow-hidden">
             <div ref={divRef} className="w-full h-full">
@@ -156,7 +156,7 @@ export default function Home() {
             download
           </h2>
         </div>
-        <div className="flex flex-col justify-start items-start bg-red-30 w-[100%] custom:w-[57%] h-fit border-none custom:border-l-2 border-main-brown border-black px-[20px] custom:px-[60px] gap-y-7 mt-10 custom:mt-0 bg-yellow-30">
+        <div className="flex flex-col justify-start items-start bg-red-30 w-[100%] custom:w-[57%] h-fit border-l-0 custom:border-l-2 border-main-brown border-black px-[20px] custom:px-[60px] gap-y-7 mt-10 custom:mt-0 bg-yellow-30 zooming">
           <div className="w-full text-start text-[24px] font-[900] pt-0 text-main-brown">
             CREATE YOUR MICHI{" "}
           </div>
@@ -165,10 +165,10 @@ export default function Home() {
               <div className="w-full text-[19px] font-[700] text-main-brown uppercase">
                 CAT
               </div>
-              <div className="w-full h-[90px] flex justify-center custom:justify-between items-start ">
+              <div className="w-full h-[90px] flex justify-center custom:justify-between items-start">
                 <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
-                <div className="w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-start items-start gap-3 overflow-auto">
-                  <div className=" w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
+                <div className="w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-center items-start gap-3 overflow-auto">
+                  <div className="w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
                     {catArray.map((item, key) => (
                       <div
                         key={key}
@@ -193,7 +193,7 @@ export default function Home() {
               </div>
               <div className="w-full h-[90px] flex justify-center custom:justify-between items-start ">
                 <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
-                <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-start items-start gap-3 overflow-auto">
+                <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-center items-start gap-3 overflow-auto">
                   <div className=" w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
                     {harArray.map((item, key) => (
                       <div
@@ -219,7 +219,7 @@ export default function Home() {
               </div>
               <div className="w-full h-[90px] flex justify-center custom:justify-between items-start ">
                 <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
-                <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-start items-start gap-3 overflow-auto">
+                <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-center items-start gap-3 overflow-auto">
                   <div className=" w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
                     {faceArray.map((item, key) => (
                       <div
@@ -245,7 +245,7 @@ export default function Home() {
               </div>
               <div className="w-full h-[90px] flex justify-center custom:justify-between items-start ">
                 <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
-                <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-start items-start gap-3 overflow-auto">
+                <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-center items-start gap-3 overflow-auto">
                   <div className=" w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
                     {handArray.map((item, key) => (
                       <div
@@ -271,7 +271,7 @@ export default function Home() {
               </div>
               <div className="w-full h-[90px] flex justify-center custom:justify-between items-start ">
                 <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
-                <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-start items-start gap-3 overflow-auto">
+                <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-center items-start gap-3 overflow-auto">
                   <div className=" w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
                     {backArray.map((item, key) => (
                       <div
@@ -297,7 +297,7 @@ export default function Home() {
               </div>
               <div className="w-full h-[90px] flex justify-center custom:justify-between items-start ">
                 <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
-                <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-start items-start gap-3 overflow-auto">
+                <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-center items-start gap-3 overflow-auto">
                   <div className=" w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
                     {pantArray.map((item, key) => (
                       <div
@@ -323,7 +323,7 @@ export default function Home() {
               </div>
               <div className="w-full h-[90px] flex justify-center custom:justify-between items-start ">
                 <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
-                <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-start items-start gap-3 overflow-auto">
+                <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-center items-start gap-3 overflow-auto">
                   <div className=" w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
                     {outfitArray.map((item, key) => (
                       <div
@@ -349,12 +349,12 @@ export default function Home() {
               </div>
               <div className="w-full h-[90px] flex justify-center custom:justify-between items-start ">
                 <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
-                <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-start items-start gap-3 overflow-auto">
+                <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-center items-start gap-3 overflow-auto">
                   <div className=" w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
                     {bgArray.map((item, key) => (
                       <div
                         key={key}
-                        className={`rounded-xl w-[90px] border-4 border-main-brown h-[90px] flex flex-col justify-start items-start ${
+                        className={`rounded-xl w-[90px] border-4 border-main-brown h-[90px] flex flex-col justify-start items-start overflow-hidden ${
                           bg === item ? "bg-white" : ""
                         }`}
                         onClick={() => setbg(item)}

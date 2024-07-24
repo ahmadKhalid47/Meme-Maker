@@ -45,4 +45,15 @@
   .zooming {
     zoom: 0.9;
   }
+  .zooming2 {
+    zoom: 0.9;
+  }
+}
+@media (max-width: 450px) {
+  .zooming {
+    zoom: 0.8;
+  }
+  .zooming2 {
+    zoom: 0.7;
+  }
 }
