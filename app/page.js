@@ -1,6 +1,11 @@
 "use client";
 import Nav from "./Components/Nav";
 // import { FaCheck, FaTimes, FaUser } from "react-icons/fa";
+import {
+  FaChevronLeft,
+  FaChevronRight,
+} from "react-icons/fa";
+
 import mainCat from "@/public/mainCat.png";
 import cat1 from "@/public/cat1.webp";
 import cat2 from "@/public/cat2.webp";
@@ -166,7 +171,7 @@ export default function Home() {
                 CAT
               </div>
               <div className="w-full h-[90px] flex justify-center custom:justify-between items-start">
-                <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
+                <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-center items-center"><FaChevronLeft/></div>
                 <div className="w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-center items-start gap-3 overflow-auto">
                   <div className="w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
                     {catArray.map((item, key) => (
@@ -182,7 +187,7 @@ export default function Home() {
                     ))}
                   </div>
                 </div>
-                <div className="rounded-xl w-[10%] h-[90px] border-2 border-main-brown flex flex-col justify-start items-start bg-light2-brown"></div>
+                <div className="rounded-xl w-[10%] h-[90px] border-2 border-main-brown flex flex-col justify-center cursor-pointer items-center bg-light2-brown"><FaChevronRight className="text-main-brown"/></div>
               </div>
             </div>
           </div>
@@ -192,7 +197,7 @@ export default function Home() {
                 HAT
               </div>
               <div className="w-full h-[90px] flex justify-center custom:justify-between items-start ">
-                <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
+                <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-center items-center"><FaChevronLeft/></div>
                 <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-center items-start gap-3 overflow-auto">
                   <div className=" w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
                     {harArray.map((item, key) => (
@@ -208,7 +213,7 @@ export default function Home() {
                     ))}
                   </div>
                 </div>
-                <div className="rounded-xl w-[10%] h-[90px] border-2 border-main-brown flex flex-col justify-start items-start bg-light2-brown"></div>
+                <div className="rounded-xl w-[10%] h-[90px] border-2 border-main-brown flex flex-col justify-center cursor-pointer items-center bg-light2-brown"><FaChevronRight className="text-main-brown"/></div>
               </div>
             </div>
           </div>
@@ -218,7 +223,7 @@ export default function Home() {
                 FACE
               </div>
               <div className="w-full h-[90px] flex justify-center custom:justify-between items-start ">
-                <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
+                <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-center items-center"><FaChevronLeft/></div>
                 <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-center items-start gap-3 overflow-auto">
                   <div className=" w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
                     {faceArray.map((item, key) => (
@@ -234,7 +239,7 @@ export default function Home() {
                     ))}
                   </div>
                 </div>
-                <div className="rounded-xl w-[10%] h-[90px] border-2 border-main-brown flex flex-col justify-start items-start bg-light2-brown"></div>
+                <div className="rounded-xl w-[10%] h-[90px] border-2 border-main-brown flex flex-col justify-center cursor-pointer items-center bg-light2-brown"><FaChevronRight className="text-main-brown"/></div>
               </div>
             </div>
           </div>
@@ -244,7 +249,7 @@ export default function Home() {
                 FRONT ACCESSORY
               </div>
               <div className="w-full h-[90px] flex justify-center custom:justify-between items-start ">
-                <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
+                <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-center items-center"><FaChevronLeft/></div>
                 <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-center items-start gap-3 overflow-auto">
                   <div className=" w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
                     {handArray.map((item, key) => (
@@ -260,7 +265,7 @@ export default function Home() {
                     ))}
                   </div>
                 </div>
-                <div className="rounded-xl w-[10%] h-[90px] border-2 border-main-brown flex flex-col justify-start items-start bg-light2-brown"></div>
+                <div className="rounded-xl w-[10%] h-[90px] border-2 border-main-brown flex flex-col justify-center cursor-pointer items-center bg-light2-brown"><FaChevronRight className="text-main-brown"/></div>
               </div>
             </div>
           </div>
@@ -270,7 +275,7 @@ export default function Home() {
                 BACK ACCESSORY
               </div>
               <div className="w-full h-[90px] flex justify-center custom:justify-between items-start ">
-                <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
+                <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-center items-center"><FaChevronLeft/></div>
                 <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-center items-start gap-3 overflow-auto">
                   <div className=" w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
                     {backArray.map((item, key) => (
@@ -286,7 +291,7 @@ export default function Home() {
                     ))}
                   </div>
                 </div>
-                <div className="rounded-xl w-[10%] h-[90px] border-2 border-main-brown flex flex-col justify-start items-start bg-light2-brown"></div>
+                <div className="rounded-xl w-[10%] h-[90px] border-2 border-main-brown flex flex-col justify-center cursor-pointer items-center bg-light2-brown"><FaChevronRight className="text-main-brown"/></div>
               </div>
             </div>
           </div>
@@ -296,7 +301,7 @@ export default function Home() {
                 PANT
               </div>
               <div className="w-full h-[90px] flex justify-center custom:justify-between items-start ">
-                <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
+                <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-center items-center"><FaChevronLeft/></div>
                 <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-center items-start gap-3 overflow-auto">
                   <div className=" w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
                     {pantArray.map((item, key) => (
@@ -312,7 +317,7 @@ export default function Home() {
                     ))}
                   </div>
                 </div>
-                <div className="rounded-xl w-[10%] h-[90px] border-2 border-main-brown flex flex-col justify-start items-start bg-light2-brown"></div>
+                <div className="rounded-xl w-[10%] h-[90px] border-2 border-main-brown flex flex-col justify-center cursor-pointer items-center bg-light2-brown"><FaChevronRight className="text-main-brown"/></div>
               </div>
             </div>
           </div>
@@ -322,7 +327,7 @@ export default function Home() {
                 OUTFIT
               </div>
               <div className="w-full h-[90px] flex justify-center custom:justify-between items-start ">
-                <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
+                <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-center items-center"><FaChevronLeft/></div>
                 <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-center items-start gap-3 overflow-auto">
                   <div className=" w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
                     {outfitArray.map((item, key) => (
@@ -338,7 +343,7 @@ export default function Home() {
                     ))}
                   </div>
                 </div>
-                <div className="rounded-xl w-[10%] h-[90px] border-2 border-main-brown flex flex-col justify-start items-start bg-light2-brown"></div>
+                <div className="rounded-xl w-[10%] h-[90px] border-2 border-main-brown flex flex-col justify-center cursor-pointer items-center bg-light2-brown"><FaChevronRight className="text-main-brown"/></div>
               </div>
             </div>
           </div>
@@ -348,7 +353,7 @@ export default function Home() {
                 BACKGROUND
               </div>
               <div className="w-full h-[90px] flex justify-center custom:justify-between items-start ">
-                <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
+                <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-center items-center"><FaChevronLeft/></div>
                 <div className=" w-fit mx-[2%] custom:mx-0 custom:w-[75%] h-[90px] flex justify-center items-start gap-3 overflow-auto">
                   <div className=" w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
                     {bgArray.map((item, key) => (
@@ -364,7 +369,7 @@ export default function Home() {
                     ))}
                   </div>
                 </div>
-                <div className="rounded-xl w-[10%] h-[90px] border-2 border-main-brown flex flex-col justify-start items-start bg-light2-brown"></div>
+                <div className="rounded-xl w-[10%] h-[90px] border-2 border-main-brown flex flex-col justify-center cursor-pointer items-center bg-light2-brown"><FaChevronRight className="text-main-brown"/></div>
               </div>
             </div>
           </div>
