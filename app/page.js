@@ -1,6 +1,10 @@
 import Nav from "./Components/Nav";
 // import { FaCheck, FaTimes, FaUser } from "react-icons/fa";
 import mainCat from "@/public/mainCat.png";
+import cat1 from "@/public/alien.webp";
+import cat2 from "@/public/anime2.webp";
+import cat3 from "@/public/ans.webp";
+import cat4 from "@/public/ansem.webp";
 
 export default function Home() {
   return (
@@ -8,8 +12,10 @@ export default function Home() {
       <Nav />
       <div className="flex justify-between items-start bg-green-30 w-full h-full pt-5">
         <div className="flex flex-col justify-start items-start bg-yellow-30 w-[43%] h-full gap-y-6">
-          <div className="flex justify-between items-start bg-light-brown w-[430px] h-[430px] rounded-2xl border-[8px] border-main-brown">
-            <img src={ mainCat.src}  className="w-full h-full" alt=""/>
+          <div className="relative flex justify-between items-start bg-light-brown w-[430px] h-[430px] rounded-2xl border-[8px] border-main-brown overflow-hidden">
+            <img src={mainCat.src} className="absolute w-[100%] h-full" alt="" />
+            {/* <img src={cat1.src} className="absolute w-[100%] h-ful" alt="" /> */}
+            <img src={cat2.src} className="absolute w-[100%] h-ful" alt="" />
           </div>
           <h2 className="flex justify-center items-start bg-light2-brown w-[430px] uppercase py-3 rounded-full border-4 border-main-brown text-[20px] font-[900] transform text-main-brown">
             {/* <FaTimes/> */}
@@ -33,8 +39,8 @@ export default function Home() {
               </div>
               <div className="w-full h-[90px] flex justify-between items-start ">
                 <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
-                <div className=" w-[75%] h-[90px] flex justify-start items-start gap-3 overflow-x-auto">
-                  <div className=" w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
+                <div className=" w-[75%] h-[90px] flex justify-start items-start gap-3 overflow-auto">
+                  <div className=" w-fit h-[90px] flex justify-start items-start gap-3">
                     <div className="rounded-xl w-[90px] border-4 border-main-brown h-[90px] flex flex-col justify-start items-start bg-white"></div>
                     <div className="rounded-xl w-[90px] border-2 border-main-brown h-[90px] flex flex-col justify-start items-start "></div>
                     <div className="rounded-xl w-[90px] border-2 border-main-brown h-[90px] flex flex-col justify-start items-start "></div>
@@ -54,10 +60,18 @@ export default function Home() {
                 <div className="rounded-xl w-[10%] border-2 border-main-brown opacity-[0.2] h-[90px] flex flex-col justify-start items-start"></div>
                 <div className=" w-[75%] h-[90px] flex justify-start items-start gap-3 overflow-x-auto">
                   <div className=" w-fit h-[90px] flex justify-start items-start gap-3 overflow-auto">
-                    <div className="rounded-xl w-[90px] border-4 border-main-brown h-[90px] flex flex-col justify-start items-start bg-white"></div>
-                    <div className="rounded-xl w-[90px] border-2 border-main-brown h-[90px] flex flex-col justify-start items-start "></div>
-                    <div className="rounded-xl w-[90px] border-2 border-main-brown h-[90px] flex flex-col justify-start items-start "></div>
-                    <div className="rounded-xl w-[90px] border-2 border-main-brown h-[90px] flex flex-col justify-start items-start "></div>
+                    <div className="rounded-xl w-[90px] border-4 border-main-brown h-[90px] flex flex-col justify-start items-start bg-white">
+                      <img src={cat1.src} />
+                    </div>
+                    <div className="rounded-xl w-[90px] border-2 border-main-brown h-[90px] flex flex-col justify-start items-start ">
+                      <img src={cat2.src} />
+                    </div>
+                    <div className="rounded-xl w-[90px] border-2 border-main-brown h-[90px] flex flex-col justify-start items-start ">
+                      <img src={cat3.src} />
+                    </div>
+                    <div className="rounded-xl w-[90px] border-2 border-main-brown h-[90px] flex flex-col justify-start items-start ">
+                      <img src={cat4.src} />
+                    </div>
                   </div>
                 </div>
                 <div className="rounded-xl w-[10%] h-[90px] border-2 border-main-brown flex flex-col justify-start items-start bg-light2-brown"></div>
