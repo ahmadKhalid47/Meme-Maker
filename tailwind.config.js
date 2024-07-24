@@ -20,7 +20,8 @@ module.exports = {
       'lg': '1024px',
       'xl': '1280px',
       'xxl': '1536px',
-      'custom': '1100px', // Your custom screen size
+      'custom': '1100px', 
+      'custom2': '600px', 
     },
   },
   plugins: [],

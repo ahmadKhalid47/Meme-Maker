@@ -91,8 +91,8 @@ export default function Home() {
   return (
     <div className="px-[3%] xl:px-[6%] 2xl:px-[12%] w-full h-fit pb-10 bg-light-brown">
       <Nav />
-      <div className="flex flex-col custom:flex-row justify-between items-start bg-green-30 w-full h-full pt-5 bg-green-400">
-        <div className="flex flex-col justify-start items-center custom:items-start bg-yellow-30 w-[100%] custom:w-[43%] h-full gap-y-6 bg-red-300">
+      <div className="flex flex-col custom:flex-row justify-between items-start bg-green-30 w-full h-full pt-5 bg-green-40 zooming">
+        <div className="flex flex-col justify-start items-center custom:items-start bg-yellow-30 w-[100%] custom:w-[43%] h-full gap-y-6 bg-red-30">
           <div className="relative flex justify-between items-start bg-light-brown w-[430px] h-[430px] rounded-2xl border-[8px] border-main-brown overflow-hidden">
             <div ref={divRef} className="w-full h-full">
               <img
@@ -156,11 +156,11 @@ export default function Home() {
             download
           </h2>
         </div>
-        <div className="flex flex-col justify-start items-start bg-red-30 w-[100%] custom:w-[57%] h-fit border-none custom:border-l-2 border-main-brown border-black px-[20px] custom:px-[60px] gap-y-7 mt-10 custom:mt-0 bg-yellow-300">
+        <div className="flex flex-col justify-start items-start bg-red-30 w-[100%] custom:w-[57%] h-fit border-none custom:border-l-2 border-main-brown border-black px-[20px] custom:px-[60px] gap-y-7 mt-10 custom:mt-0 bg-yellow-30">
           <div className="w-full text-start text-[24px] font-[900] pt-0 text-main-brown">
             CREATE YOUR MICHI{" "}
           </div>
-          <div className="w-full h-fit flex flex-col justify-start items-start gap-5 bg-pink-400">
+          <div className="w-full h-fit flex flex-col justify-start items-start gap-5 bg-pink-40">
             <div className="w-full h-full">
               <div className="w-full text-[19px] font-[700] text-main-brown uppercase">
                 CAT
