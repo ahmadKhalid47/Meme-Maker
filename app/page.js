@@ -34,9 +34,14 @@ import bg1 from "@/public/bg1.webp";
 import bg2 from "@/public/bg2.webp";
 import bg3 from "@/public/bg3.webp";
 import bg4 from "@/public/bg4.webp";
+import html2canvas from "html2canvas";
+import download from "downloadjs";
 
 import { useState } from "react";
+import { useRef } from "react";
+
 export default function Home() {
+  const divRef = useRef(null);
   let [cat, setCat] = useState(cat1);
   let [hat, setHat] = useState(null);
   let [face, setFace] = useState(null);
@@ -44,34 +49,44 @@ export default function Home() {
   let [back, setback] = useState(null);
   let [pant, setpant] = useState(null);
   let [outfit, setoutfit] = useState(null);
-  let [bg, setbg] = useState(null);
+  let [bg, setbg] = useState(bg1);
   let harArray = [hat1, hat2, hat3, hat4];
   let faceArray = [face1, face2, face3, face4];
   let handArray = [hand1, hand2, hand3, hand4];
   let catArray = [cat1, cat2, cat3, cat4];
   let backArray = [back1, back2, back3, back4];
   let pantArray = [pant1, pant2, pant3, pant4];
-  let bgArray = [
-    bg1,
-    bg2,
-    bg3,
-    bg4];
-  let outfitArray = [
-    outfit1,
-    outfit2,
-    outfit3,
-    outfit4];
+  let bgArray = [bg1, bg2, bg3, bg4];
+  let outfitArray = [outfit1, outfit2, outfit3, outfit4];
   function resetAll() {
     setHat(null);
     setFace(null);
     setHand(null);
+    setCat(null);
     setback(null);
     setpant(null);
-    setback(null);
     setoutfit(null);
-    setcat(null);
     setbg(null);
   }
+  const handleDownload = async () => {
+    const element = divRef.current;
+    if (!element) return;
+
+    const canvas = await html2canvas(element);
+    const dataURL = canvas.toDataURL("image/png");
+    download(dataURL, "myImage.png", "image/png");
+  };
+  const generateRandom = () => {
+    console.log(Math.floor(Math.random() * 4));
+    setHat(harArray[Math.floor(Math.random() * 4)]);
+    setFace(faceArray[Math.floor(Math.random() * 4)]);
+    setHand(handArray[Math.floor(Math.random() * 4)]);
+    setCat(catArray[Math.floor(Math.random() * 4)]);
+    setback(backArray[Math.floor(Math.random() * 4)]);
+    setpant(pantArray[Math.floor(Math.random() * 4)]);
+    setoutfit(outfitArray[Math.floor(Math.random() * 4)]);
+    setbg(bgArray[Math.floor(Math.random() * 4)]);
+  };
 
   return (
     <div className=" px-[12%] w-full h-fit pb-10 bg-light-brown">
@@ -79,46 +94,48 @@ export default function Home() {
       <div className="flex justify-between items-start bg-green-30 w-full h-full pt-5">
         <div className="flex flex-col justify-start items-start bg-yellow-30 w-[43%] h-full gap-y-6">
           <div className="relative flex justify-between items-start bg-light-brown w-[430px] h-[430px] rounded-2xl border-[8px] border-main-brown overflow-hidden">
-            <img
-              src={bg ? bg.src : ""}
-              className="absolute w-[100%] h-full"
-              alt=""
-            />
-            <img
-              src={cat ? cat.src : ""}
-              className="absolute w-[100%] h-full"
-              alt=""
-            />
-            <img
-              src={hat ? hat.src : ""}
-              className="absolute w-[100%] h-ful"
-              alt=""
-            />
-            <img
-              src={face ? face.src : ""}
-              className="absolute w-[100%] h-ful"
-              alt=""
-            />
-            <img
-              src={hand ? hand.src : ""}
-              className="absolute w-[100%] h-ful"
-              alt=""
-            />
-            <img
-              src={back ? back.src : ""}
-              className="absolute w-[100%] h-ful"
-              alt=""
-            />
-            <img
-              src={pant ? pant.src : ""}
-              className="absolute w-[100%] h-ful"
-              alt=""
-            />
-            <img
-              src={outfit ? outfit.src : ""}
-              className="absolute w-[100%] h-ful"
-              alt=""
-            />
+            <div ref={divRef} className="w-full h-full">
+              <img
+                src={bg ? bg.src : ""}
+                className="absolute w-[100%] h-full"
+                alt=""
+              />
+              <img
+                src={cat ? cat.src : ""}
+                className="absolute w-[100%] h-full"
+                alt=""
+              />
+              <img
+                src={hat ? hat.src : ""}
+                className="absolute w-[100%] h-ful"
+                alt=""
+              />
+              <img
+                src={face ? face.src : ""}
+                className="absolute w-[100%] h-ful"
+                alt=""
+              />
+              <img
+                src={hand ? hand.src : ""}
+                className="absolute w-[100%] h-ful"
+                alt=""
+              />
+              <img
+                src={back ? back.src : ""}
+                className="absolute w-[100%] h-ful"
+                alt=""
+              />
+              <img
+                src={pant ? pant.src : ""}
+                className="absolute w-[100%] h-ful"
+                alt=""
+              />
+              <img
+                src={outfit ? outfit.src : ""}
+                className="absolute w-[100%] h-ful"
+                alt=""
+              />
+            </div>
           </div>
           <h2
             className="flex justify-center items-start bg-light2-brown w-[430px] uppercase py-3 rounded-full border-4 border-main-brown text-[20px] font-[900] transform text-main-brown hover:cursor-pointer"
@@ -126,10 +143,16 @@ export default function Home() {
           >
             reset michi
           </h2>
-          <h2 className="flex justify-center items-start bg-light2-brown w-[430px] uppercase py-3 rounded-full border-4 border-main-brown text-[20px] font-[900] transform text-main-brown hover:cursor-pointer">
+          <h2
+            className="flex justify-center items-start bg-light2-brown w-[430px] uppercase py-3 rounded-full border-4 border-main-brown text-[20px] font-[900] transform text-main-brown hover:cursor-pointer"
+            onClick={generateRandom}
+          >
             generate random
           </h2>
-          <h2 className="flex justify-center items-start bg-main-brown w-[430px] uppercase py-3 rounded-full border-4 border-main-brown text-[20px] font-[900] transform text-light-brown hover:cursor-pointer">
+          <h2
+            className="flex justify-center items-start bg-main-brown w-[430px] uppercase py-3 rounded-full border-4 border-main-brown text-[20px] font-[900] transform text-light-brown hover:cursor-pointer"
+            onClick={handleDownload}
+          >
             download
           </h2>
         </div>
