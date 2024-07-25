@@ -41,6 +41,9 @@
   width: 0px;
   scrollbar-width: 0px;
 }
+.zoom{
+  zoom: 0.5;
+}
 @media (max-width: 600px) {
   .zooming {
     zoom: 0.9;
