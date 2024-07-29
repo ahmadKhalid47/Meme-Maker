@@ -89,13 +89,12 @@ export default function Home() {
     download(dataURL, "myImage.png", "image/png");
   };
   const generateRandom = () => {
-    console.log(Math.floor(Math.random() * 4));
     setHat(harArray[Math.floor(Math.random() * 7)]);
     setFace(faceArray[Math.floor(Math.random() * 5)]);
     setHand(handArray[Math.floor(Math.random() * 7)]);
     // setCat(catArray[Math.floor(Math.random() * 4)]);
     setback(backArray[Math.floor(Math.random() * 5)]);
-    setpant(pantArray[Math.floor(Math.random() * 4)]);
+    // setpant(pantArray[Math.floor(Math.random() * 4)]);
     setoutfit(outfitArray[Math.floor(Math.random() * 4)]);
     setbg(bgArray[Math.floor(Math.random() * 4)]);
   };
@@ -153,7 +152,7 @@ export default function Home() {
               {face ? (
                 <img
                   src={face ? face.src : ""}
-                  className={`absolute w-[100%] z-[40] h-full ${
+                  className={`absolute w-[100%] z-[30] h-full ${
                     face === face1
                       ? "translate-y-8 -translate-x-4 scale-[1.4]"
                       : face === face2
