@@ -25,10 +25,13 @@ import face2 from "@/public/face2.webp";
 import face3 from "@/public/face3.webp";
 import face4 from "@/public/face4.webp";
 import face5 from "@/public/face5.webp";
-import hand1 from "@/public/hand1.webp";
-import hand2 from "@/public/hand2.webp";
-import hand3 from "@/public/hand3.webp";
+import hand5 from "@/public/hand1.webp";
+import hand6 from "@/public/hand2.webp";
+import hand7 from "@/public/hand3.webp";
 import hand4 from "@/public/hand4.webp";
+import hand1 from "@/public/handCheck.png";
+import hand2 from "@/public/handCheck2.png";
+import hand3 from "@/public/handCheck3.png";
 import back1 from "@/public/back1.webp";
 import back2 from "@/public/back2.webp";
 import back3 from "@/public/back3.webp";
@@ -63,7 +66,7 @@ export default function Home() {
   let [bg, setbg] = useState(bg1);
   let harArray = [hat1, hat2, hat3, hat4, hat5, hat6, hat7];
   let faceArray = [face1, face2, face3, face4, face5];
-  let handArray = [hand1, hand2, hand3, hand4];
+  let handArray = [hand1, hand2, hand3, hand4, hand5, hand6, hand7];
   let catArray = [cat1, cat2, cat3, cat4];
   let backArray = [back1, back2, back3, back4];
   let pantArray = [pant1, pant2, pant3, pant4];
@@ -91,7 +94,7 @@ export default function Home() {
     console.log(Math.floor(Math.random() * 4));
     setHat(harArray[Math.floor(Math.random() * 7)]);
     setFace(faceArray[Math.floor(Math.random() * 5)]);
-    setHand(handArray[Math.floor(Math.random() * 4)]);
+    setHand(handArray[Math.floor(Math.random() * 7)]);
     setCat(catArray[Math.floor(Math.random() * 4)]);
     setback(backArray[Math.floor(Math.random() * 4)]);
     setpant(pantArray[Math.floor(Math.random() * 4)]);
@@ -107,7 +110,7 @@ export default function Home() {
           <div className="relative flex justify-between items-start bg-light-brown w-[430px] h-[430px] rounded-2xl border-[8px] border-main-brown overflow-hidden">
             <div
               ref={divRef}
-              className="w-full h-full flex justify-center items-center"
+              className="w-full h-full flex justify-center items-center relative"
             >
               <img
                 src={bg ? bg.src : ""}
@@ -116,14 +119,14 @@ export default function Home() {
               />
               <img
                 src={cat ? cat.src : ""}
-                className="absolute w-[70%] mx-auto h-ful translate-y-[22%]"
+                className="absolute w-[100%] mx-auto h-full z-[0]"
                 alt=""
               />
-              <img
+              {/* <img
                 src={hat ? hat.src : ""}
                 className="absolute w-[100%] h-full translate-y-[20%]"
                 alt=""
-              />
+              /> */}
               <img
                 src={face ? face.src : ""}
                 className="absolute w-[100%] h-ful translate-y-24"
@@ -131,7 +134,7 @@ export default function Home() {
               />
               <img
                 src={hand ? hand.src : ""}
-                className="absolute w-[100%] h-ful z-[10] translate-y-28"
+                className="absolute w-[100%] h-ful z-[10] top-8 "
                 alt=""
               />
               <img
